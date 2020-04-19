@@ -1,0 +1,1 @@
+psql -p 5432 -h localhost -U postgres postgres -c 'create database seymour;'
