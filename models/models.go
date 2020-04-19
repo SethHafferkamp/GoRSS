@@ -42,16 +42,3 @@ type FeedItem struct {
 	// Extensions      ext.Extensions           `json:"extensions,omitempty"`
 	// Custom          map[string]string        `json:"custom,omitempty"
 }
-
-type User struct {
-	gorm.Model
-	Name string
-}
-
-// `Profile` belongs to `User`, `UserID` is the foreign key
-type Profile struct {
-	gorm.Model
-	UserID int
-	User   User
-	Name   string
-}

@@ -30,8 +30,6 @@ func RunMigrations() {
 	db.AutoMigrate(
 		&FeedUrl{},
 		&FeedPull{},
-		&User{},
-		&Profile{},
 		&FeedItem{},
 	)
 }
@@ -41,8 +39,6 @@ func MigrateToZero() {
 	db.DropTable(
 		&FeedUrl{},
 		&FeedPull{},
-		&User{},
-		&Profile{},
 		&FeedItem{},
 	)
 }
