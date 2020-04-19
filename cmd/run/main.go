@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"hello/feedparsing"
+
+	"github.com/SethHafferkamp/GoRSS/feedparsing"
 )
 
 func main() {
