@@ -10,7 +10,7 @@ import (
 const host = "localhost"
 const port = 5432
 const user = "postgres"
-const dbname = "seymour"
+const dbname = "goseymour"
 const password = ""
 
 func GetDB() *gorm.DB {
